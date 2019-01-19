@@ -7,24 +7,24 @@ let value;
 let str = 'some test string';
 value = str[0] + str[str.length - 1];
 
+
 // ----------------------------the task 2---------------------------
-value = str[0].toUpperCase() + str.slice(1, str.length - 1) + str[str.length - 1].toUpperCase();
+value = str[0].toUpperCase() + str.slice(1, - 1) + str[str.length - 1].toUpperCase();
 
 // ----------------------------the task 3---------------------------
 value = str.indexOf('string');
 
-// ----------------------------the task 4---------------------------
-value = str.indexOf(' ');
-value = str.indexOf(' ', 5);
+// ----------------------------!the task 4!---------------------------
+let firstSpace = str.indexOf(' ');
+let secondSpace = str.indexOf(' ', firstSpace + 1);
 
-// ----------------------------the task 5---------------------------
-value = str.substr(5, 4);
+// ----------------------------!the task 5!---------------------------
+value = str.substr(4, 4);
 
-// ----------------------------the task 6---------------------------
-value = str.substring(5, 9);
+// ----------------------------!the task 6!---------------------------
+value = str.substring(4, 9);
 
 // ----------------------------the task 7---------------------------
-
 value = str.slice(0, -6);
 
 // ----------------------------the task 8---------------------------
@@ -53,10 +53,11 @@ value = Math.random().toFixed(2);
 //-b-
 value = Math.ceil(Math.random() * 10);
 
-// ----------------------------the task 4---------------------------
+// ----------------------------!the task 4!---------------------------
 let x = 0.6;
 let y = 0.7;
 value = (x + y).toFixed(1);
+value = Number(value);
 
 // ----------------------------the task 5---------------------------
 value = parseFloat('100$');
